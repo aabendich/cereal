@@ -10,6 +10,10 @@
 function myFunction() {
     document.getElementById("bull").innerHTML =
     "RAWR...I am hungry for cookiez :3";
+    var btn = document.createElement("BUTTON");        // Create a <button> element
+    var t = document.createTextNode("Who are you?");       // Create a text node
+    btn.appendChild(t);                                // Append the text to <button>
+    document.body.appendChild(btn);                    // Append <button> to <body>
 }
 </script>
 <br>
