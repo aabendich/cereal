@@ -58,16 +58,16 @@ function myFunction() {
      var t = document.createTextNode("Who are you?");    
      btn.appendChild(t);                                
      document.body.appendChild(btn);   
-     document.getElementById("bull").innerHTML =
-    "woof woof";
+    document.getElementById("bull").innerHTML = document.getElementById("bull").innerHTML +
+     " shut up";
     }
     if (conf1 == false) {
      var btn = document.createElement("BUTTON");     
      var t = document.createTextNode("What are you?");    
      btn.appendChild(t);                                
      document.body.appendChild(btn); 
-     document.getElementById("bull").innerHTML =
-    "WOOF";
+     document.getElementById("bull").innerHTML = document.getElementById("bull").innerHTML +
+     " meow";
     }
  }
 }
