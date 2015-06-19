@@ -27,22 +27,26 @@ function myFunction() {
     document.getElementById("bull").innerHTML =
     "RAWR...I am hungry for cookiez :3";
     x = x + 1;
-    document.getElementById("but1") = "woof";
  }
  else if (x == 1) {
-
+    document.getElementById("bull").innerHTML =
+    "woof";
     var conf1 = confirm("Are you really who I think you am?")
     if (conf1 == true) {
      var btn = document.createElement("BUTTON");     
      var t = document.createTextNode("Who are you?");    
      btn.appendChild(t);                                
-     document.body.appendChild(btn);                    
+     document.body.appendChild(btn);   
+     document.getElementById("bull").innerHTML =
+    "woof woof";
     }
     if (conf1 == false) {
      var btn = document.createElement("BUTTON");     
      var t = document.createTextNode("What are you?");    
      btn.appendChild(t);                                
-     document.body.appendChild(btn);        
+     document.body.appendChild(btn); 
+     document.getElementById("bull").innerHTML =
+    "WOOF";
     }
  }
 }
