@@ -14,13 +14,14 @@
  <br> <br> 
 <h1>Oh My God ... Is that my dick?!</h1>
 <br> <br>
+<p id="demo">Click the button to display the cookies associated with this document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
 <script>
-var map;
-function initialize() {
-  map = new google.maps.Map(document.getElementById('map-canvas'), {
-    zoom: 8,
-    center: {lat: -34.397, lng: 150.644}
-  });
+function myFunction() {
+    document.getElementById("demo").innerHTML =
+    "Cookies associated with this document: " + document.cookie;
 }
 </script>
 </body>
