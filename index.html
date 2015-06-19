@@ -18,7 +18,7 @@
 <br>
 <h1 id="bull">Click the button to make the bull roar.</h1>
 
-<button onclick="myFunction()">Roar, my rabid bull!</button>
+<button id="but" onclick="myFunction()">Roar, my rabid bull!</button>
 
 <script>
 var x = 0;
@@ -27,6 +27,7 @@ function myFunction() {
     document.getElementById("bull").innerHTML =
     "RAWR...I am hungry for cookiez :3";
     x = x + 1;
+    "but".name = "woof";
  }
  else if (x == 1) {
 
@@ -39,7 +40,7 @@ function myFunction() {
     }
     if (conf1 == false) {
      var btn = document.createElement("BUTTON");     
-     var t = document.createTextNode("what are you?");    
+     var t = document.createTextNode("What are you?");    
      btn.appendChild(t);                                
      document.body.appendChild(btn);        
     }
