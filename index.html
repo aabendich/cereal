@@ -29,6 +29,27 @@ function myFunction() {
     x = x + 1;
  }
  else if (x == 1) {
+    document.getElementById("bull").innerHTML = "woof";
+    var conf1 = confirm("Are you really who I think you am?")
+    if (conf1 == true) {
+     var btn = document.createElement("BUTTON");     
+     var t = document.createTextNode("Who are you?");    
+     btn.appendChild(t);                                
+     document.body.appendChild(btn);   
+     document.getElementById("bull").innerHTML =
+    "woof woof";
+    }
+    if (conf1 == false) {
+     var btn = document.createElement("BUTTON");     
+     var t = document.createTextNode("What are you?");    
+     btn.appendChild(t);                                
+     document.body.appendChild(btn); 
+     document.getElementById("bull").innerHTML =
+    "WOOF";
+    }
+    x = x + 1
+ }
+  else if (x == 2) {
     document.getElementById("bull").innerHTML = document.getElementById("bull").innerHTML +
     "woof";
     var conf1 = confirm("Are you really who I think you am?")
