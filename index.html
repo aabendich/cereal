@@ -4,16 +4,16 @@
 <body>
 
 
-<h1>My Pets</h1>
-<h2>This is my pet turtle:</h2>
-<img src="For the.png" alt="This is my pet turtle, Spalding, and boy do I love him." width="300" height="300">
-<p>Oh boy, I really loved Spalding! Why did he have to die? I ask myself that question every single friggin night! Well anyway...</p>
-<h2>I was always too high for Spalding :(</h2>
+<h1 id="head1">My Pets</h1>
+<h2 id="head2">This is my pet turtle:</h2>
+<img id="pic1"src="For the.png" alt="This is my pet turtle, Spalding, and boy do I love him." width="300" height="300">
+<p id="para1">Oh boy, I really loved Spalding! Why did he have to die? I ask myself that question every single friggin night! Well anyway...</p>
+<h2 id="head3">I was always too high for Spalding :(</h2>
 <br>
-<img src="friends.png" width="300" height="25">
-<p>My first cousin ever sent me a message just saying I was an antisocial bum. But I misread it! I thought it said anti-SoCal and I was like, YEAH fuck that. Cuz like, fuck SoCal... not rly tho, lol.</p>
+<img id="pic2" src="friends.png" width="300" height="25">
+<p id="para2" >My first cousin ever sent me a message just saying I was an antisocial bum. But I misread it! I thought it said anti-SoCal and I was like, YEAH fuck that. Cuz like, fuck SoCal... not rly tho, lol.</p>
  <br> <br> 
-<h1>Oh My God ... Is that my dick?!</h1>
+<h1 id="head4">Oh My God ... Is that my dick?!</h1>
 <br>
 <br>
 <h1 id="bull">Click the button to make the bull roar.</h1>
@@ -68,6 +68,7 @@ function myFunction() {
      document.body.appendChild(btn); 
      document.getElementById("bull").innerHTML = document.getElementById("bull").innerHTML +
      " meow";
+    document.getElementById("head4").innerHTML = "I think I'm hallucinating."
     }
  }
 }
