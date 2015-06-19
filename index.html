@@ -53,9 +53,7 @@ function myFunction() {
     document.getElementById("bull").innerHTML = document.getElementById("bull").innerHTML +
     " woof";
     var conf1 = confirm("Are you really who I think you am?")
-    if (conf1 == true) {
-     var btn = document.createElement("BUTTON");     
-     var t = document.createTextNode("Who are you?");    
+    if (conf1 == true) {  
      btn.appendChild(t);                                
      document.body.appendChild(btn);   
     document.getElementById("bull").innerHTML = document.getElementById("bull").innerHTML +
@@ -63,8 +61,6 @@ function myFunction() {
      document.getElementById("head4").innerHTML = "I think you're hallucinating."
     }
     if (conf1 == false) {
-     var btn = document.createElement("BUTTON");     
-     var t = document.createTextNode("What are you?");    
      btn.appendChild(t);                                
      document.body.appendChild(btn); 
      document.getElementById("bull").innerHTML = document.getElementById("bull").innerHTML +
