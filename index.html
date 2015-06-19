@@ -21,14 +21,27 @@
 <button onclick="myFunction()">Roar, my rabid bull!</button>
 
 <script>
+var x = 0;
 function myFunction() {
+ if (x = 0) {
     document.getElementById("bull").innerHTML =
     "RAWR...I am hungry for cookiez :3";
-    var btn = document.createElement("BUTTON");        // Create a <button> element
-    var t = document.createTextNode("Who are you?");       // Create a text node
-    btn.appendChild(t);                                // Append the text to <button>
-    document.body.appendChild(btn);                    // Append <button> to <body>
-    confirm("Are you really who I think you am?")
+
+    var conf1 = confirm("Are you really who I think you am?")
+    if (conf1 == true) {
+     var btn = document.createElement("BUTTON");     
+     var t = document.createTextNode("Who are you?");    
+     btn.appendChild(t);                                
+     document.body.appendChild(btn);                    
+    }
+    if (conf1 == false) {
+     var btn = document.createElement("BUTTON");     
+     var t = document.createTextNode("what are you?");    
+     btn.appendChild(t);                                
+     document.body.appendChild(btn);        
+    }
+    
+ }
 }
 </script>
 </body>
